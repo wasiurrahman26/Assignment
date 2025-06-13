@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+    body{
+    background-color: #eaa515;
+    justify-items: center;
+    
+}
+
+.main{
+     height: 550px;
+     width: 850px;
+     background-color: white;
+     margin-top: 1.5rem;
+    text-align: center;
+
+}
+
+form{
+    padding-left:8rem ;
+   line-height: 2.5rem;
+}
+
+#work{
+    margin-right: 4rem;
+   margin-bottom: 1rem;
+}
+
+.input4{
+    display: flex;
+    line-height: 1.2rem;
+    width: 540px;
+
+}
+
+#choose{
+  margin-right: 4rem;
+   height: 40px;
+   width: 330px;
+}
+
+#suggestions {
+
+        
+   height: 30px;
+   width: 160px; 
+   margin-right: 11.5rem;
+   margin-top: 0.8rem;
+
+}
+.checkbox-complete{
+   
+    height: 110px;
+    display: flex;
+}
+
+.para{
+   text-align: end;
+    width: 42%;
+    
+}
+.checkbox{
+    
+   text-align: start;
+   line-height:0% ;
+   margin-top: 1.7rem;
+}
+
+
+.radiobtn-complete{
+   
+    height: 70px;
+    display: flex;
+}
+
+.radio-para{
+
+    text-align: end;
+    width: 42%;
+    
+
+}
+
+.radiobtn{
+     text-align: start;
+   line-height:0% ;
+   margin-top: 1.7rem;
+
+}
+
+button{
+
+    width: 150px;
+    height: 30px;
+    background-color:#eaa515;
+   
+    border: none;
+    border-radius: 0.4rem;
+    margin-right: 8.8rem;
+    color: white;
+    font-size: 1rem;
+  
+  
+}
+    </style>
+    </head>
+    <body>
+    <div class="main">
+        <h1>Survey Form</h1>
+        <p>User Stories survey form</p>      
+        <form action="/server">
+            <label for="Name">Name:&nbsp;</label>
+            <input type="text" placeholder="Enter Name" id="Name" >
+            <br>
+            <label for="Mail">E-mail:&nbsp;</label>
+            <input type="text" placeholder="Enter E-Mail" id="Mail">
+            <br>
+            <label for="work">Work Experience:&nbsp;</label>
+            <input type="text" placeholder="Enter Number" id="work">
+            <br>
+            <div class ="input4">
+            <label for="choose">Are you comfortable in investing in real estate  on platform without first investigating properly</label>
+            <select name="choose" id="choose">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            </select>
+            </div>
+            <label for="suggestions">Suggestions to build trusted platform:&nbsp;</label>
+            <input type="text"  id="suggestions">
+            <br>
+            <div class="checkbox-complete">
+            <div class="para">
+            <p>You are ready to invest in :</p>
+            </div>    
+            <div class="checkbox">  
+            <input type="checkbox" id="checkbox1">
+            <label for="checkbox1">Real Estate</label>
+            <br>
+            <input type="checkbox"id="checkbox2">
+            <label for="checkbox2">Mutual Funds</label>
+            <br>
+        <input type="checkbox"id="checkbox3">
+            <label for="checkbox3">Crypto Currency</label>
+            <br>
+            <input type="checkbox"id="checkbox4">
+            <label for="checkbox4">Stock & Bonds</label>
+            </div>
+            </div>
+            <div class="radiobtn-complete">
+        <div class="radio-para">
+                <p>Are you ready for further contact:</p>
+            </div>
+            <div class="radiobtn">
+            <input type="radio" name ="contact"id="Yes">
+            <label for="Yes">Yes</label>
+            <br>
+            <input type="radio"name ="contact" id="No">
+            <label for="No">No</label>
+            </div></div>
+            <button type="submit">Submit</button>
+        </form></div>
+    </body>
+    </html>
